@@ -7,5 +7,6 @@ int getline(char str[],int max){
         i++;
     if(c=='\n')
         str[i++]=c;
-    str[i]='\0'
+    str[i]='\0';
+    return i;
 }
