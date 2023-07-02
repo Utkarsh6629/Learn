@@ -10,3 +10,11 @@ int getline(char str[],int max){
     str[i]='\0';
     return i;
 }
+void rev(char *s){
+    int temp,i=0;
+    for(i=0;s[i]!=\0;i++){
+        temp=s[i];
+        s[i]=s[n-i-1];
+        s[n-i-1]=temp;
+    }
+}
