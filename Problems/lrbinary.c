@@ -21,24 +21,25 @@ int ri(int a[],int size,int key){
 }
 
 int le(int a[],int size,int key){
-    int start,end,mid;
+    int start,end,mid,ans;
     start=0; 
     end=size-1;
     mid=(start+end)/2;
+    ans=-1;
+
     //to find left
    while(start<=end){
         if(a[mid]==key){
-            while(a[mid]==key){
-            mid=mid-1;}
-            return mid-1;
-   }
+            ans=mid;
+            end=mid-1;}
+   
         if(a[mid]>key)
             end=mid-1;
         else
             start=mid+1;
         mid=(start+end)/2;             
     }
-    return -1;
+    return ans;
 }
 
 int main(){
