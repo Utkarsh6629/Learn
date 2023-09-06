@@ -3,7 +3,7 @@ using namespace std;
 int main(){
 
     int arr[26]={0};
-    string s="happy";
+    string s="happiness";
     int index;
     for(int i=0;i<s.length();i++){
         index=s[i]-'a';
@@ -19,6 +19,4 @@ int main(){
     }
     char f='a'+ maxindex;
     cout<<"the most occuring letter in the word is: "<<f;
-
-
 }
